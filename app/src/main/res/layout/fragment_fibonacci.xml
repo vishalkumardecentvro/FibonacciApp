@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:layout_margin="10dp"
+  tools:context=".fragments.FibonacciFragment">
+
+  <TextView
+    android:id="@+id/tvBanner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginTop="25dp"
+    android:layout_marginBottom="25dp"
+    android:text="Please input your Fibonacci inputs here:"
+    android:textColor="@color/black"
+    android:textSize="18sp"
+    android:textStyle="bold" />
+
+  <com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/tilFirstNumber"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/tvBanner"
+    app:errorEnabled="true">
+
+    <com.google.android.material.textfield.TextInputEditText
+      android:id="@+id/etFirstNumber"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="5dp"
+      android:hint="Please enter first number of fibonacci series!"
+      android:inputType="number"
+      android:textColor="@color/black"
+      android:textSize="16sp" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/tilSecondNumber"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/tilFirstNumber"
+    app:errorEnabled="true">
+
+    <com.google.android.material.textfield.TextInputEditText
+      android:id="@+id/etSecondNumber"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="5dp"
+      android:hint="Please enter second number of fibonacci series!"
+      android:inputType="number"
+      android:textColor="@color/black"
+      android:textSize="16sp" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/tilRange"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/tilSecondNumber"
+    app:errorEnabled="true">
+
+    <com.google.android.material.textfield.TextInputEditText
+      android:id="@+id/etRange"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="5dp"
+      android:hint="Range of Fibonacci"
+      android:inputType="number"
+      android:text="10"
+      android:textColor="@color/black"
+      android:textSize="16sp" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <Button
+    android:id="@+id/btnCalculate"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/tilRange"
+    android:layout_margin="5dp"
+    android:text="Calculate Fibonacci series" />
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="175dp"
+    android:layout_below="@id/btnCalculate"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="5dp"
+    android:lines="5"
+    android:id="@+id/tvFibonacciSeries"
+    android:scrollbars="vertical"
+    android:textColor="@color/black"
+    android:textSize="18sp" />
+
+</RelativeLayout>

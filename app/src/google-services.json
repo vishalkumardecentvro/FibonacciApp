@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "997301051752",
+    "project_id": "fibonacciapp-a9a60",
+    "storage_bucket": "fibonacciapp-a9a60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997301051752:android:930e8aef05e7d670fa76dd",
+        "android_client_info": {
+          "package_name": "com.myapp.fibonacciapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "997301051752-2i0ae9smjcm3ko05t7egeq1c2gcad9kj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.myapp.fibonacciapp",
+            "certificate_hash": "7fac3768ffe2446369b49e1a7c7add42971758dc"
+          }
+        },
+        {
+          "client_id": "997301051752-mjiotbun815rmg0f2rolegmqa10ffv6i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCz1mZRogqxTxfQVXs7DZfsVv9ThBal3nE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "997301051752-mjiotbun815rmg0f2rolegmqa10ffv6i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
