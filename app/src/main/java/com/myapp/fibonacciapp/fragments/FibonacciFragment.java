@@ -104,7 +104,7 @@ public class FibonacciFragment extends Fragment {
         } else if (secondNumber.isEmpty()) {
           binding.etSecondNumber.setError("Please enter second digit!");
         } else if (range.isEmpty()) {
-          binding.etSecondNumber.setError("Please enter range!");
+          binding.etRange.setError("Please enter range!");
         } else {
           binding.tvFibonacciBanner.setVisibility(View.VISIBLE);
           calculateFibonacci(Integer.parseInt(firstNumber), Integer.parseInt(secondNumber), Integer.parseInt(range));
