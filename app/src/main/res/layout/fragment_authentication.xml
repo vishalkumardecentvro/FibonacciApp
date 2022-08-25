@@ -6,10 +6,12 @@
   tools:context=".fragments.AuthenticationFragment">
 
   <ImageView
+    android:id="@+id/ivFibonacciImage"
     android:layout_width="300dp"
     android:layout_height="205dp"
     android:layout_centerHorizontal="true"
     android:layout_margin="20dp"
+    android:layout_above="@id/tvSignInText"
     android:src="@drawable/fibonacci" />
 
   <TextView
@@ -18,14 +20,11 @@
     android:layout_height="wrap_content"
     android:layout_above="@id/sign_in_button"
     android:layout_gravity="center"
-    android:layout_marginStart="10dp"
-    android:layout_marginTop="10dp"
-    android:layout_marginEnd="10dp"
-    android:layout_marginBottom="10dp"
+    android:layout_margin="10dp"
     android:background="@color/white"
     android:gravity="center"
     android:padding="10dp"
-    android:text="Fibonacci series assignment"
+    android:text="Fibonacci series assignment \n Xelpmoc"
     android:textAllCaps="true"
     android:textColor="@color/black"
     android:textSize="18sp"
