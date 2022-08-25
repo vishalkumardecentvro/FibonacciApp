@@ -83,18 +83,33 @@
     android:text="Calculate Fibonacci series" />
 
   <TextView
+    android:id="@+id/tvFibonacciBanner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/btnCalculate"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginTop="25dp"
+    android:layout_marginBottom="25dp"
+    android:text="The Fibonacci series :"
+    android:visibility="gone"
+    android:textColor="@color/black"
+    android:textSize="18sp"
+    android:textStyle="bold" />
+
+  <TextView
+    android:id="@+id/tvFibonacciSeries"
     android:layout_width="match_parent"
     android:layout_height="175dp"
-    android:layout_below="@id/btnCalculate"
+    android:layout_below="@id/tvFibonacciBanner"
     android:layout_marginHorizontal="5dp"
     android:layout_marginStart="5dp"
     android:layout_marginTop="5dp"
     android:layout_marginEnd="5dp"
     android:layout_marginBottom="5dp"
     android:lines="5"
-    android:id="@+id/tvFibonacciSeries"
     android:scrollbars="vertical"
     android:textColor="@color/black"
+    android:textStyle="bold"
     android:textSize="18sp" />
 
 </RelativeLayout>

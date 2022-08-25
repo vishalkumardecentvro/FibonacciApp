@@ -106,6 +106,7 @@ public class FibonacciFragment extends Fragment {
         } else if (range.isEmpty()) {
           binding.etSecondNumber.setError("Please enter range!");
         } else {
+          binding.tvFibonacciBanner.setVisibility(View.VISIBLE);
           calculateFibonacci(Integer.parseInt(firstNumber), Integer.parseInt(secondNumber), Integer.parseInt(range));
         }
       }
